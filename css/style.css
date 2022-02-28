@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-image: url('../img/judul.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+}
+
+header .container h2 {
+  font-size: 3em;
+}
+
+header ul,
+header li {
+  list-style: none;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  margin-top: -10px;
+  background-color: white;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0px -11px 5px 6px rgba(0, 0, 0, 0.3);
+  height: 10vh;
+}
+header ul li {
+  margin-top: 20px;
+}
+
+header ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #00b4d8;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #content {
+  width: 70vw;
+}
+
+main article .container {
+  margin: 50px;
+}
+
+main article .owl-carousel {
+  height: 60vh;
+}
+
+main article .owl-carousel img {
+  height: 45vh;
+  width: 50vw;
+}
+.owl-next,
+.owl-prev {
+  position: absolute;
+}
+
+.owl-prev {
+  left: 30px;
+}
+.owl-next {
+  right: 30px;
+}
+
+.owl-next,
+.owl-prev {
+  top: 90px;
+}
+
+.owl-next span,
+.owl-prev span {
+  color: white;
+  font-size: 100px;
+}
+
+main article .bawah {
+  margin-top: -130px;
+}
+
+main aside {
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 400px;
+}
+
+main aside .container {
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 40px;
+  box-shadow: -9px 0px 56px -6px rgba(0, 0, 0, 0.65);
+  width: 20vw;
+  border-radius: 30px;
+  height: 70vh;
+}
+
+main aside .container p {
+  color: gray;
+}
+
+main aside .container img {
+  border-radius: 20px;
+  height: 300px;
+}
+
+footer {
+  padding-top: 2px;
+  background-color: #9adcff;
+  height: 100px;
+}
+footer .container {
+  text-align: center;
+}
+footer .container ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer .container ul li {
+  margin-right: 40px;
+}
+
+footer .container ul li a {
+  color: rgb(88, 72, 177);
+}
+
+/* scrolling active */
+.scrolling-active {
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 999999;
+}
+
+.scrolling-active .navbar {
+  margin-top: 0px;
+  border-radius: 0px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  main #content {
+    width: 100%;
+  }
+  main aside {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  main aside .container {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 40px;
+    box-shadow: -9px 0px 56px -6px rgba(0, 0, 0, 0.65);
+    width: 100%;
+    border-radius: 30px;
+    height: 70vh;
+  }
+  footer {
+    margin-top: 50px;
+  }
+}
